@@ -1,0 +1,12 @@
+
+.env
+vevn/
+__pycache__/
+*.sqlite3
+*.pyc 
+
+# text files
+postgreSQL.txt
+postman.txt
+github_process.txt
+
