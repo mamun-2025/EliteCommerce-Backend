@@ -17,7 +17,7 @@ EliteCommerce is a professional-grade, scalable, and decoupled E-commerce backen
 - [x] **Custom User Model:** Email-based authentication instead of the default username.
 -[x] **JWT Authentication:** Secure login system with Access and Refresh tokens.
 -[x] **User Profiles:** Protected endpoints to manage user data.
--[x] ** PostgreSQL Integration:** Robust and scalable database configuration.
+-[x] **PostgreSQL Integration:** Robust and scalable database configuration.
 
 ## ⚙️ Installation & Setup
 

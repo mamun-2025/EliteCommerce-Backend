@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # লোকাল অ্যাপস
     'apps.users',
+    'apps.products',
 ]
 
 MIDDLEWARE = [
