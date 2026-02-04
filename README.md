@@ -15,9 +15,12 @@ EliteCommerce is a professional-grade, scalable, and decoupled E-commerce backen
 
 - [x] **Decoupled Architecture:** Built to serve data to any frontend (React, Vue, or Mobile).
 - [x] **Custom User Model:** Email-based authentication instead of the default username.
--[x] **JWT Authentication:** Secure login system with Access and Refresh tokens.
--[x] **User Profiles:** Protected endpoints to manage user data.
--[x] **PostgreSQL Integration:** Robust and scalable database configuration.
+- [x] **JWT Authentication:** Secure login system with Access and Refresh tokens.
+- [x] **User Profiles:** Protected endpoints to manage user data.
+- [x] **PostgreSQL Integration:** Robust and scalable database configuration.
+- [x] **Product Management:** Models for Categories, Brands, and Products.
+- [x] **Relational Database Design:** One-to-Manay relationships between Categories and Products.
+- [x] **Django Admin Integration:** Customized admin panel for easy product entry.
 
 ## ⚙️ Installation & Setup
 
@@ -63,11 +66,14 @@ Follow these steps to run the project locally:
 | POST | `/api/login/` | Login & get JWT tokens |
 | POST | `/api/token/refresh/` | Refresh the access token |
 | GET | `/api/profile/` | Get logged-in user details (Required Token) |
+| GET | `/api/products/` | List all Products |
+| GET | `/api/products/categories/` | List all categories |
 
 ## 🏗️ Project Structure
 
 ├── apps/
 │   └── users/          # Custom User & Auth logic
+|   └── products/       # Category, Brand and Product Management
 ├── core/               # Project settings & URL routing
 ├── .env                # Secret environment variables (Ignored by Git)
 ├── .gitignore          # Files to exclude from Git
