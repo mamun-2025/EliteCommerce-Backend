@@ -21,6 +21,8 @@ EliteCommerce is a professional-grade, scalable, and decoupled E-commerce backen
 - [x] **Product Management:** Models for Categories, Brands, and Products.
 - [x] **Relational Database Design:** One-to-Manay relationships between Categories and Products.
 - [x] **Django Admin Integration:** Customized admin panel for easy product entry.
+- [x] **API Integration:** Successfully implemented Serializers and views to serve product data JSON format.
+- [x] **Media Handling:** Configured django to handle and serve product images.
 
 ## ⚙️ Installation & Setup
 

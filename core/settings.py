@@ -141,3 +141,6 @@ SIMPLE_JWT = {
    'AUTH_HEADER_TYPES': ('Bearer',), # হেডারে 'Bearer' লিখতে হবে
 }
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
