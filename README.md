@@ -23,6 +23,7 @@ EliteCommerce is a professional-grade, scalable, and decoupled E-commerce backen
 - [x] **Django Admin Integration:** Customized admin panel for easy product entry.
 - [x] **API Integration:** Successfully implemented Serializers and views to serve product data JSON format.
 - [x] **Media Handling:** Configured django to handle and serve product images.
+- [x] **Relation API:** Product API now includes nested Category and Brand data.
 
 ## ⚙️ Installation & Setup
 
@@ -75,7 +76,7 @@ Follow these steps to run the project locally:
 
 ├── apps/
 │   └── users/          # Custom User & Auth logic
-|   └── products/       # Category, Brand and Product Management
+|   └── products/       # Category, Brand and Product Management with media support
 ├── core/               # Project settings & URL routing
 ├── .env                # Secret environment variables (Ignored by Git)
 ├── .gitignore          # Files to exclude from Git
