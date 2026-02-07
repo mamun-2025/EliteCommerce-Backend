@@ -28,6 +28,7 @@ EliteCommerce is a professional-grade, scalable, and decoupled E-commerce backen
 - [x] **Dynamic Filtering** Filter products by Category and Brand using `django-filter`
 - [x] **Product Detial View** Single product retrieval by ID via `RetrieveAPIView`
 - [x] **Ordering** Sort products by price or creation date.
+- [x] **Pagination** Implemented `StandardResultsSetPagination` to handle large datasets efficiently.
 
 ## ⚙️ Installation & Setup
 

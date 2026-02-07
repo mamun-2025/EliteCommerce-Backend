@@ -3,6 +3,7 @@ from rest_framework import generics, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Category, Product
 from .serializers import CategorySerializer, ProductSerializer
+from .pagination import StandardResultsSetPagination
 
 class CategoryListView(generics.ListAPIView):
    queryset = Category.objects.all()
@@ -11,6 +12,8 @@ class CategoryListView(generics.ListAPIView):
 class ProductListView(generics.ListAPIView):
    queryset = Product.objects.select_related('category', 'brand').all()
    serializer_class = ProductSerializer
+
+   pagination_class = StandardResultsSetPagination
 
    # এখানে ৩টি ব্যাকএন্ড যোগ করছি: সাধারণ ফিল্টার, সার্চ এবং অর্ডারিং
    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
