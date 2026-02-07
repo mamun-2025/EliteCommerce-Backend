@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # লোকাল অ্যাপস
     'apps.users',
+    'django_filters',
     'apps.products',
 ]
 
@@ -133,7 +134,9 @@ REST_FREMEWORK = {
    'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
+    'DEFAULT_FILTER_BACKENDS':['django_filters.rest_framework.DjangoFilterBackend'],
 }
+
 
 SIMPLE_JWT = {
    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60), # টোকেন কতক্ষণ কাজ করবে

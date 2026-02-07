@@ -24,6 +24,10 @@ EliteCommerce is a professional-grade, scalable, and decoupled E-commerce backen
 - [x] **API Integration:** Successfully implemented Serializers and views to serve product data JSON format.
 - [x] **Media Handling:** Configured django to handle and serve product images.
 - [x] **Relation API:** Product API now includes nested Category and Brand data.
+- [x] **Advanced Search** Users can search products by name or description.
+- [x] **Dynamic Filtering** Filter products by Category and Brand using `django-filter`
+- [x] **Product Detial View** Single product retrieval by ID via `RetrieveAPIView`
+- [x] **Ordering** Sort products by price or creation date.
 
 ## ⚙️ Installation & Setup
 
