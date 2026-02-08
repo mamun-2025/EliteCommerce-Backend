@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'apps.users',
     'django_filters',
     'apps.products',
+    'apps.orders',
 ]
 
 MIDDLEWARE = [
@@ -127,7 +128,7 @@ AUTH_USER_MODEL = 'users.User'
 # প্রথমে জ্যাঙ্গোকে বলতে হবে আমরা SimpleJWT ব্যবহার করব। 
 # তাই আমরা REST_FRAMEWORK সেটিংসে এটি যোগ করব:
 from datetime import timedelta
-REST_FREMEWORK = {
+REST_FRAMEWORK = {
    'DEFAULT_AUTHENTICATION_CLASSES':(
       'rest_framework_simplejwt.authentication.JWTAuthentication',
    ),

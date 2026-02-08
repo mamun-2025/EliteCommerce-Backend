@@ -19,6 +19,7 @@ urlpatterns = [
     path('api/register/', UserRegistrationView.as_view(), name='user_registration'),
     path('api/profile/', UserProfileView.as_view(), name='profile'),
     path('api/products/', include('apps.products.urls')),
+    path('api/orders/', include('apps.orders.urls')),
 ]
 
 if settings.DEBUG:
