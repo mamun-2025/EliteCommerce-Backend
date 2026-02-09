@@ -30,6 +30,9 @@ EliteCommerce is a professional-grade, scalable, and decoupled E-commerce backen
 - [x] **Ordering** Sort products by price or creation date.
 - [x] **Pagination** Implemented `StandardResultsSetPagination` to handle large datasets efficiently.
 - [x] **OrderManagement** Created `Order` and `OrderItems` models to handle user purchases with status tracking.
+   - Implemented **Django Admin Inlines** for better order visualization.
+   - Status tracking(Pending, Processing, Shipped, Delivered).
+
 
 ## ⚙️ Installation & Setup
 
